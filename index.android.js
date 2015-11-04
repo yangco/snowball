@@ -48,10 +48,8 @@ var AwesomeProject = React.createClass({
                     title="主页"
                     renderIcon={() => <Icon name="home" size={30}  /> }
                     renderSelectedIcon={() => <Icon name="home" size={30} color="#4B83DF"/>}
-                    onPress={() => this.setState({ selectedTab: 'home' })}>
-
-                        <HomeNav/>
-
+                    onPress={() => this.setState({ selectedTab: 'home' })}
+                    <HomeNav/>
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     selected={this.state.selectedTab === 'profile'}

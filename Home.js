@@ -17,7 +17,7 @@ var {
     Navigator,
     } = React;
 
-var Carousel = require('react-native-looped-carousel');
+var Carousel = require('./components/react-native-carousel/index');
 var Dimensions = require('Dimensions');
 var {width, height} = Dimensions.get('window');
 //var Swiper = require('react-native-swiper');
@@ -80,9 +80,15 @@ var home = React.createClass({
         return (
             <View style={styles.container} >
                 <Carousel delay={1500} style={{width: width, height: 120}}>
-                    <Image style={{width:width,height:120}} source={ { uri: 'http://192.168.30.76:8882/banner.png' } } />
-                    <Image style={{width:width,height:120}} source={ { uri: 'http://localhost:8882/banner.png' } } />
-                    <Image style={{width:width,height:120}} source={ { uri: 'http://localhost:8882/banner.png' } } />
+                    <Image style={{width:width,height:120,backgroundColor:'red'}} source={ { uri: 'http://192.168.30.76:8882/banner.png' } } >
+                        <Text>11111</Text>
+                    </Image>
+                    <Image style={{width:width,height:120,backgroundColor:'yellow'}} source={ { uri: 'http://localhost:8882/banner.png' } } >
+                        <Text>22222</Text>
+                    </Image>
+                    <Image style={{width:width,height:120,backgroundColor:'blue'}} source={ { uri: 'http://localhost:8882/banner.png' } } >
+                        <Text>3333</Text>
+                    </Image>
                 </Carousel>
 
                 <View style={styles.messages}>
