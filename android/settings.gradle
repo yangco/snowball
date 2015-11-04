@@ -1,0 +1,12 @@
+rootProject.name = 'AwesomeProject'
+
+include ':app'
+
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+include ':MPChartLib'
+project(':MPChartLib').projectDir = new File(rootProject.projectDir, '../components/MPChartLib/')
+
+include ':react-native-canvas'
+project(':react-native-canvas').projectDir = new File(rootProject.projectDir, '../components/react-native-canvas/android')

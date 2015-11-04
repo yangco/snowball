@@ -1,0 +1,8 @@
+-  request:
+      url: ^/banner.png
+   response:
+      file: banner.png
+-  request:
+      url: ^/cs.png
+   response:
+      file: cs.png
